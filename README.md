@@ -14,6 +14,9 @@ Enunciado de la práctica
 #PRAC1-rserranov.ipynb
 Fichero código fuente ejecutable en Jupiter Notebook
 
+##PRAC1-rserranov.html
+Fichero HTML con el resultado de la práctica
+
 #PRAC1_rserranov.pdf
 Fichero que contiene las respuestas de la práctica.
 
