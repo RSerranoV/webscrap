@@ -1,0 +1,171 @@
+#robots de gasolinabarata.info
+
+# Bloqueo basico para todos los bots y crawlers
+# puede dar problemas por bloqueo de recursos en GWT
+User-agent: *
+Allow: /imagenes/*
+Allow: /recursos/*.js
+Allow: /recursos/*.css
+Allow: /include/*.js
+Allow: /include/*.css
+Allow: /assets/*
+Allow: /recursos/*
+Disallow: /cgi-bin
+Disallow: /wp-content/plugins/ 
+Disallow: /wp-content/themes/ 
+Disallow: /wp-includes/ 
+Disallow: /*/attachment/
+Disallow: /tag/*/page/
+Disallow: /tag/*/feed/
+Disallow: /page/
+Disallow: /comments/
+Disallow: /xmlrpc.php
+Disallow: /?attachment_id*
+
+User-agent: *
+Disallow: /banana/
+Disallow: /ir-a/*
+
+User-agent: Googlebot
+Disallow: /banana/*
+Disallow: /banana/
+Disallow: /ir-a/*
+
+User-agent: bingbot
+Disallow: /banana/*
+Disallow: /banana/
+Disallow: /ir-a/*
+
+
+# Bloqueo de las URL dinamicas
+# Disallow: /*?
+
+
+#Bloqueo de busquedas
+User-agent: *
+Disallow: /buscar/?q= 
+Disallow: /buscar/
+
+
+# Bloqueo de trackbacks
+User-agent: *
+Disallow: /trackback
+Disallow: /*trackback
+Disallow: /*trackback*
+Disallow: /*/trackback
+
+
+# Bloqueo de feeds para crawlers
+User-agent: *
+Allow: /feed/$ 
+Disallow: /feed/ 
+Disallow: /comments/feed/
+Disallow: /*/feed/$ 
+Disallow: /*/feed/rss/$ 
+Disallow: /*/trackback/$ 
+Disallow: /*/*/feed/$ 
+Disallow: /*/*/feed/rss/$ 
+Disallow: /*/*/trackback/$ 
+Disallow: /*/*/*/feed/$ 
+Disallow: /*/*/*/feed/rss/$ 
+Disallow: /*/*/*/trackback/$
+
+
+# Ralentizamos algunos bots que se suelen volver locos
+User-agent: noxtrumbot
+Crawl-delay: 20
+User-agent: msnbot
+Crawl-delay: 20
+User-agent: Slurp
+Crawl-delay: 20
+
+
+# Bloqueo de bots y crawlers poco utiles
+User-agent: MSIECrawler
+Disallow: / 
+User-agent: WebCopier 
+Disallow: / 
+User-agent: HTTrack 
+Disallow: / 
+User-agent: Microsoft.URL.Control 
+Disallow: / 
+User-agent: libwww 
+Disallow: / 
+User-agent: Orthogaffe 
+Disallow: / 
+User-agent: UbiCrawler 
+Disallow: / 
+User-agent: DOC 
+Disallow: / 
+User-agent: Zao 
+Disallow: / 
+User-agent: sitecheck.internetseer.com 
+Disallow: / 
+User-agent: Zealbot 
+Disallow: / 
+User-agent: MSIECrawler 
+Disallow: / 
+User-agent: SiteSnagger 
+Disallow: / 
+User-agent: WebStripper 
+Disallow: / 
+User-agent: WebCopier 
+Disallow: / 
+User-agent: Fetch 
+Disallow: / 
+User-agent: Offline Explorer 
+Disallow: / 
+User-agent: Teleport 
+Disallow: / 
+User-agent: TeleportPro 
+Disallow: / 
+User-agent: WebZIP 
+Disallow: / 
+User-agent: linko 
+Disallow: / 
+User-agent: HTTrack 
+Disallow: / 
+User-agent: Microsoft.URL.Control 
+Disallow: / 
+User-agent: Xenu 
+Disallow: / 
+User-agent: larbin 
+Disallow: / 
+User-agent: libwww 
+Disallow: / 
+User-agent: ZyBORG 
+Disallow: / 
+User-agent: Download Ninja 
+Disallow: / 
+User-agent: wget 
+Disallow: / 
+User-agent: grub-client 
+Disallow: / 
+User-agent: k2spider 
+Disallow: / 
+User-agent: NPBot 
+Disallow: / 
+User-agent: WebReaper 
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: SemrushBot-SA
+Disallow: /
+User-agent: AhrefsBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: linkdexbot
+Disallow: /
+User-agent: fetcher
+Disallow: /
+
+
+# Previene problemas de recursos bloqueados en Google Webmaster Tools
+User-Agent: Googlebot
+Allow: /*.css$
+Allow: /*.js$
+
+
+# Si utilizas Yoast SEO estos son los sitemaps principales
+# Sitemap: https://gasolinabarata.info/sitemap/sitemap.xml
